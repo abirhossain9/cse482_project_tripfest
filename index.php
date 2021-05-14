@@ -29,6 +29,17 @@
       </ul>
     </nav>
 
+    <!-- <marquee behavior="slide" direction="up" scrollamount="7" style="font-size:50px; color:#0058e693 ">TripFest</marquee>
+      <marquee behavior="slide" direction="down" scrollamount="7"style="font-size:30px">Your One Stop <span style="color:#0058e693">Companion</span></marquee>
+      <marquee behavior="slide" direction="down" scrollamount="7" style="font-size:30px">Choosing Your Next <span  style="color -->
+
+    <div style="height: 70vh; padding-left: 10%; padding-top:10%; background-color:#faf9f6; background-attachment:fixed; line-height:1.6; background-image: url('images/nature3.jpg'); background-repeat: no-repeat; background-size: 100% 100%">
+      <marquee behavior="slide" direction="up" scrollamount="25">
+        <h1 style="font-size:50px; color:#ccf6c8">TripFest</h1>
+        <h3 style="font-size:40px; color:#d8e3e7">Your One Stop <span style="color:#ccf6c8">Companion</span></h3>
+        <h3 style="font-size:40px; color:#d8e3e7">Choosing Your Next <span  style="color:#ccf6c8">Destination</span></h3>
+      </marquee>
+    </div>
     <div class="slideshow-container">
       <div class="mySlides fade">
         <div class="numbertext"></div>
@@ -54,6 +65,7 @@
     </div>
 
     <div class="cardholder">
+      <h1 style="text-align : center; margin : 50px 0px">Destinations</h1>
       <div class="row">
         <div class="column">
           <div class="card">
@@ -92,8 +104,13 @@
           </div>
         </div>
       </div>
-
-      <section></section>
+    </div>
+    <div class='feedback-div'>
+      <h1 class='bs'>Feedback</h1>
+      <div id="test-file-display">
+        
+      </div>
+    </div>
       <div class="contact">
         <div>
           <h4>Contact Us</h4>
@@ -108,7 +125,6 @@
         <h1>©Tripfest</h1>
       </footer>
       <script src="Slider.js"></script>
-    </div>
     <script>
       const venice = () => {
         location.replace("./venice.php");
@@ -125,6 +141,31 @@
       const home = () => {
         location.replace("./index.php");
       };
+
+      // const r = new XMLHttpRequest();
+      // r.open("GET", "test_file.json", async = true)
+      // r.onload = () => {
+      //   if(r.status == 200){
+      //     let obj = JSON.parse(r.responseText);
+      //     console.log(obj);
+      //     document.getElementById("test-file-display").innerHTML = "<div class='feedback-showcase column'><h1 class='feedback-name'>" + obj.objects[0].name + "</h1><p>" + obj.objects[0].comment + "</p></div><div class='feedback-showcase column'><h1 class='feedback-name'>" + obj.objects[0].name + "</h1><p>" + obj.objects[0].comment + "</p></div><div class='feedback-showcase column'><h1 class='feedback-name'>" + obj.objects[0].name + "</h1><p>" + obj.objects[0].comment + "</p></div><div class='feedback-showcase column'><h1 class='feedback-name'>" + obj.objects[0].name + "</h1><p>" + obj.objects[0].comment + "</p></div><div class='feedback-showcase column'><h1 class='feedback-name'>" + obj.objects[0].name + "</h1><p>" + obj.objects[1].comment + "</p></div>"
+      //   }
+      // }
+      // r.send();
+
+      const p = new XMLHttpRequest();
+      p.open("GET", "empdata.json", async = true);
+      p.onload = () => {
+        if(p.status == 200){
+          let objP = JSON.parse(p.responseText);
+          let docWrite = document.getElementById("test-file-display");
+          for(let i=0; i<6; i++){
+            docWrite.innerHTML +="<div class='feedback-showcase column'><h1 class='feedback-name'>" + objP[i].f_name + "</h1><small class='feedback-mail'>" + objP[i].email +"</small><p>" + objP[i].subject + "</p></div>"
+          }
+        }
+      }
+      p.send();
+
     </script>
   </body>
 </html>

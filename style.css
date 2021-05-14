@@ -1,5 +1,4 @@
 * {
-  /* width: 100%; */
   padding: 0;
   margin: 0;
   text-decoration: none;
@@ -85,6 +84,57 @@ a:hover {
 .admin-text {
   text-align: center;
   cursor: pointer;
+}
+
+.bs {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.feedback-div {
+  margin-top: 50px;
+  padding-top: 50px;
+  background-color: #faf9f6;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+
+.feedback-showcase {
+  border: 1px solid whitesmoke;
+  -webkit-box-shadow: 14px 6px 27px 2px #717171;
+  box-shadow: 14px 6px 27px 2px #717171;
+  width: 25%;
+  margin-right: 6%;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  padding: 20px !important;
+  min-height: 200px;
+  /* box-sizing: content-box; */
+  height: auto;
+  background-color: white;
+  color: black;
+  transition-duration: 0.5s;
+}
+
+.feedback-showcase:hover {
+  background-color: lightcyan;
+  min-height: 250px;
+}
+
+.feedback-name {
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.feedback-mail {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+#test-file-display {
+  margin-left: 12.5%;
 }
 
 @media (max-width: 952px) {
@@ -293,7 +343,7 @@ section {
 
 /* Clear floats after the columns */
 .row:after {
-  content: '';
+  content: "";
   display: table;
   clear: both;
 }
@@ -329,7 +379,7 @@ section {
   font-size: 10px;
 }
 
-input[type='text'],
+input[type="text"],
 select,
 textarea {
   width: 100%;
@@ -341,7 +391,7 @@ textarea {
   resize: vertical;
 }
 
-input[type='submit'] {
+input[type="submit"] {
   background-color: #4caf50;
   color: white;
   padding: 12px 20px;
@@ -350,7 +400,7 @@ input[type='submit'] {
   cursor: pointer;
 }
 
-input[type='submit']:hover {
+input[type="submit"]:hover {
   background-color: #45a049;
 }
 
@@ -398,8 +448,8 @@ form {
 }
 
 /* Full-width inputs */
-input[type='text'],
-input[type='password'] {
+input[type="text"],
+input[type="password"] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;

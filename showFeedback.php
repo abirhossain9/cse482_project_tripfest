@@ -33,7 +33,7 @@ include 'db.php';
                     <a href="Order-form.php">Book trip</a>
                 </li>
                 <li>
-                    <a href="Sign-In.php">Admin</a>
+                    <li><a href="./adminPanel.php">Admin Panel</a></li>
                 </li>
             </ul>
         </nav>

@@ -29,7 +29,7 @@ include 'db.php';
         <li><a href="feedback.php">Feedback</a></li>
         <!-- <li><a href="Register.php">Sign Up</a></li> -->
         <li><a href="Order-form.php">Book trip</a></li>
-        <li><a href="Sign-In.php">Admin</a></li>
+        <li><a href="./adminPanel.php">Admin Panel</a></li>
       </ul>
     </nav>
     <section class="order-box-div">
