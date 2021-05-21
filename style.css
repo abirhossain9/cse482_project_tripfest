@@ -7,6 +7,7 @@
 }
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 body {
   font-family: montserrat;
@@ -131,6 +132,11 @@ a:hover {
   margin-bottom: 30px;
   display: flex;
   justify-content: center;
+}
+
+.feedback-container {
+  margin-top: 100px !important;
+  margin-bottom: 100px !important;
 }
 
 #test-file-display {

@@ -36,7 +36,7 @@ include 'db.php';
                 </li>
             </ul>
         </nav>
-        <div class="container">
+        <div class="container feedback-container">
             <form action="" method="post">
                 <label for="fname">First Name</label>
                 <input type="text" id="fname" name="firstname" placeholder="Your name.."/>
